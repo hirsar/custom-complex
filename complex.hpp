@@ -23,7 +23,7 @@ public:
 	{
     	    ostringstream formattedComplex;
       	    formattedComplex << rl << " + " << im << "j";
-	    	complexInString = formattedComplex.str();
+	    complexInString = formattedComplex.str();
     	    return complexInString.data();
 	}
 
