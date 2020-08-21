@@ -13,7 +13,7 @@ private:
 	string complexInString;
 
 public:
-    Complex(){rl=0;im=0;complexInString="0 + 0j";}	
+    	Complex(){rl=0;im=0;complexInString="0 + 0j";}	
 	Complex(T RL, T IM): rl(RL), im(IM) {complexInString = to_string(rl)+" + "+to_string(im)+"j";}
 	~Complex() {}
 	T real() const {return rl;}
@@ -130,5 +130,5 @@ Complex<int> operator "" _j(unsigned long long im)
 
 Complex<double> operator "" _j(long double im)
 {
-    return Complex<double>(0,im);
+    	return Complex<double>(0,im);
 }
